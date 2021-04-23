@@ -1,5 +1,5 @@
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>TIA Login</title>
@@ -7,23 +7,38 @@
     <link rel="stylesheet" href="decorate.css">
     <script src="functionality.js"></script>
 
-  </head>
-  <body>
-    <h1>Sign In / Sign Up</h1>
-    <h2 id="AlreadyHave">Already have an Account</h2>
-    
+</head>
+<body>
+<h1>Sign In / Sign Up</h1>
+<h2 id="AlreadyHave">Already have an Account</h2>
 
-    <form class="login">
-        Username:  
-        <input type="text">
-    </form>
-    <form class="login">
-        Password:
-        <input type="text">
-    
-        <button id="button1">Sign In</button>
-        <button id="button2">Create Account</button>
 
-       
-  </body>
+<form class="login">
+    Username:
+    <input type="text" id= "UserName">
+</form>
+<form class="login">
+    Password:
+    <input type="password" id = "Password">
+    <input type= "button" id="btnSignIn" value="Sign In" onclick="SignIn()"/>
+    <input type="button" id="btnCreateAccount" value="Create Account" onclick="SignUp()"/>
+</form>
+
+<script>
+    function SignIn()
+    {
+        let Username = document.getElementById("UserName").value;
+        let Pass = document.getElementById("Password").value;
+        console.log(Username + " " + Password);
+
+        document.getElementById("UserName").value = '';
+        document.getElementById("Password").value = '';
+    }
+
+    function SignUp()
+    {
+        window.location.href = "createAccount.html";
+    }
+</script>
+</body>
 </html>

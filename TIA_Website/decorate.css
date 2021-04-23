@@ -73,3 +73,14 @@ h1
     background-color: #008CBA;
     color: white;
   }
+
+.txtInBox{
+    position: relative;
+    left: 5%;
+}
+
+#txtInput{
+    text-align: center;
+    text-decoration: none;
+    left: 70%;
+}
