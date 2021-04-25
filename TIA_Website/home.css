@@ -18,6 +18,15 @@ html {
     background-size: cover;
 }
 
+#loginImage {
+    margin: 0;
+    background-image: url(assets/sunset-5004905_1920.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mainCenter {
     position: absolute;
     left: 0;
@@ -223,3 +232,56 @@ div {
     margin-right: 30px;
     text-align: center;
 }
+
+/*Login CSS*/
+.input {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: black;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 0 20px 20px 0;
+    border: black;
+}
+
+.inputField:focus {
+    border: 2px solid black;
+}
+
+.loginButton {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+}
+
+#noAccount {
+    color: white;
+    outline: black 2px;
+    opacity: 0.8;
+}
+
+#noAccount:hover {
+    opacity: 1;
+}
+
+#signUpHere {
+    color: rebeccapurple;
+}
+/*Login CSS End*/
