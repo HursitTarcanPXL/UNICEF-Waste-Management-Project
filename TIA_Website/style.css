@@ -27,6 +27,15 @@ html {
     background-size: cover;
 }
 
+#downloadImage {
+    margin: 0;
+    background-image: url(assets/wp1843029.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mainCenter {
     position: absolute;
     left: 0;
