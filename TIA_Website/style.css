@@ -18,9 +18,30 @@ html {
     background-size: cover;
 }
 
+#comingSoon {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+#comingSoon:hover {
+    color: red;
+    font-size: 50px;
+    cursor: grab;
+}
+
 #loginImage {
     margin: 0;
     background-image: url(assets/sunset-5004905_1920.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#learnImage {
+    margin: 0;
+    background-image: url(assets/1350366.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,6 +261,65 @@ div {
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
+}
+
+#socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 250px;
+    margin-top: 40px;
+}
+
+.socialsButton {
+    width: 200px;
+    margin-right: 20px;
+    background: grey;
+    border: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#pxlButton {
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#pxlButton:hover {
+    opacity: 0.7;
+}
+
+#fontysButton {
+    color: white;
+    background: #4e3a4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#fontysButton:hover {
+    opacity: 0.7;
+}
+
+#belgiumCampusButton {
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#belgiumCampusButton:hover {
+    opacity: 0.7;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
 }
 
 /*Login CSS*/
