@@ -5,6 +5,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a3c3439572.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <section class="menu">
@@ -48,157 +49,156 @@
 <!--                <input class="inputField" type="text" id="Age" placeholder="Age">-->
 <!--            </div>-->
             
-            <div class="input">
-                <i class="fas fa-id-card-alt icon"></i>
-                <input class="inputField" type="text" id="Nat_ID" placeholder="ID Number">
-            </div>
+<!--            <div class="input">-->
+<!--                <i class="fas fa-id-card-alt icon"></i>-->
+<!--                <input class="inputField" type="text" id="Nat_ID" placeholder="ID Number">-->
+<!--            </div>-->
             
             <div class="input">
                 <i class="fas fa-key icon"></i>
                 <input class="inputField" type="text" id="pass" placeholder="Password">
             </div>
             
-            <div class="input">
-                <i class="fas fa-key icon"></i>
-                <input class="inputField" type="text" id="confpass" placeholder="Confirm Password">
-            </div>
+<!--            <div class="input">-->
+<!--                <i class="fas fa-key icon"></i>-->
+<!--                <input class="inputField" type="text" id="confpass" placeholder="Confirm Password">-->
+<!--            </div>-->
             
             <!--Sign Up button-->
-            <button type="submit" class="loginButton" onclick="btnSignUpclick()"><i class="fas fa-sign-in-alt"></i></button>
+            <button type="submit" class="loginButton" onclick="addNewUser()"><i class="fas fa-sign-in-alt"></i></button>
         </form>
         
         <!--Link to sign in-->
         <p id="noAccount">Already have an account? Sign in <a id="signUpHere" href="login.html">here.</a></p>
     </div>
 </section>
+<!--<script>-->
+<!--function btnSignUpclick()-->
+<!--{-->
+<!--    let Uname = document.getElementById("Uname").value;-->
+<!--    let FiName = document.getElementById("Fname").value;-->
+<!--    let LaName = document.getElementById("Lname").value;-->
+<!--    let Email = document.getElementById("E-address").value;-->
+<!--    let Age = document.getElementById("Age").value;-->
+<!--    let ID = document.getElementById("Nat_ID").value;-->
+<!--    let Pass = document.getElementById("pass").value;-->
+<!--    let ConfPass = document.getElementById("confpass").value;-->
+<!--     -->
+<!--     -->
+<!--     let FieldsCount = 0;-->
+<!--     console.log(FieldsCount);-->
+<!--     let FieldError = 0;-->
+<!--     -->
+<!--    if (Uname == '')-->
+<!--    {-->
+<!--        FieldError = 1;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (FiName == '')-->
+<!--    {-->
+<!--        FieldError = 2;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (LaName == '')-->
+<!--    {-->
+<!--        FieldError = 3;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (Email == '')-->
+<!--    {-->
+<!--        FieldError = 4;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (Age == '')-->
+<!--    {-->
+<!--        FieldError = 5;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (ID == '')-->
+<!--    {-->
+<!--        FieldError = 6;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (Pass == '')-->
+<!--    {-->
+<!--        FieldError = 7;-->
+<!--        FieldsCount++;-->
+<!--    }-->
+<!--    -->
+<!--    if (ConfPass == '')-->
+<!--    {-->
+<!--        FieldError = 8;-->
+<!--        FieldsCount++;-->
+<!--    }-->
 
-<script>
-function btnSignUpclick()
-{
-    let Uname = document.getElementById("Uname").value;
-    let FiName = document.getElementById("Fname").value;
-    let LaName = document.getElementById("Lname").value;
-    let Email = document.getElementById("E-address").value;
-    let Age = document.getElementById("Age").value;
-    let ID = document.getElementById("Nat_ID").value;
-    let Pass = document.getElementById("pass").value;
-    let ConfPass = document.getElementById("confpass").value;
-     
-     
-     let FieldsCount = 0;
-     console.log(FieldsCount);
-     let FieldError = 0;
-     
-    if (Uname == '')
-    {
-        FieldError = 1;
-        FieldsCount++;
-    }
-    
-    if (FiName == '')
-    {
-        FieldError = 2;
-        FieldsCount++;
-    }
-    
-    if (LaName == '')
-    {
-        FieldError = 3;
-        FieldsCount++;
-    }
-    
-    if (Email == '')
-    {
-        FieldError = 4;
-        FieldsCount++;
-    }
-    
-    if (Age == '')
-    {
-        FieldError = 5;
-        FieldsCount++;
-    }
-    
-    if (ID == '')
-    {
-        FieldError = 6;
-        FieldsCount++;
-    }
-    
-    if (Pass == '')
-    {
-        FieldError = 7;
-        FieldsCount++;
-    }
-    
-    if (ConfPass == '')
-    {
-        FieldError = 8;
-        FieldsCount++;
-    }
-
-    if (FieldsCount > 1)
-    {
-        alert("Please ensure that all fields are filled");
-    }
-    else
-    {
-        switch(FieldError)
-        {
-            case 1:
-            alert("Please ensure that the username field is filled");
-            document.getElementById("Uname").focus;
-            break;
-            
-            case 2:
-            alert("Please enter your First name")
-            document.getElementById("Fname").focus;
-            break;
-            
-            case 3:
-            alert("Please enter your Last name")
-            document.getElementById("Lname").focus;
-            break;
-            
-            case 4:
-            alert("Please enter your E-mail address")
-            document.getElementById("E-address").focus;
-            break;
-            
-            case 5:
-            alert("Please enter your Age")
-            document.getElementById("Age").focus;
-            break;
-            
-            case 6:
-            alert("Please enter your First name")
-            document.getElementById("Nat_ID").focus;
-            break;
-            
-            case 7:
-            alert("Please ensure that the password field is filled")
-            document.getElementById("pass").focus;
-            break;
-            
-            case 8:
-            alert("Please ensure that the Confirm password field is filled")
-            document.getElementById("confpass").focus;
-            break;
-            
-            default:
-            if (Pass != ConfPass)
-            {
-                alert("Please ensure that your password matches your confirmed password")
-                document.getElementById("pass").focus;    
-            }
-            else
-            {
-                alert("Welcome " + Uname + " thanks for joining us")
-            }
-            break;   
-        }
-    }
-}
-</script>
+<!--    if (FieldsCount > 1)-->
+<!--    {-->
+<!--        alert("Please ensure that all fields are filled");-->
+<!--    }-->
+<!--    else-->
+<!--    {-->
+<!--        switch(FieldError)-->
+<!--        {-->
+<!--            case 1:-->
+<!--            alert("Please ensure that the username field is filled");-->
+<!--            document.getElementById("Uname").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 2:-->
+<!--            alert("Please enter your First name")-->
+<!--            document.getElementById("Fname").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 3:-->
+<!--            alert("Please enter your Last name")-->
+<!--            document.getElementById("Lname").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 4:-->
+<!--            alert("Please enter your E-mail address")-->
+<!--            document.getElementById("E-address").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 5:-->
+<!--            alert("Please enter your Age")-->
+<!--            document.getElementById("Age").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 6:-->
+<!--            alert("Please enter your First name")-->
+<!--            document.getElementById("Nat_ID").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 7:-->
+<!--            alert("Please ensure that the password field is filled")-->
+<!--            document.getElementById("pass").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            case 8:-->
+<!--            alert("Please ensure that the Confirm password field is filled")-->
+<!--            document.getElementById("confpass").focus;-->
+<!--            break;-->
+<!--            -->
+<!--            default:-->
+<!--            if (Pass != ConfPass)-->
+<!--            {-->
+<!--                alert("Please ensure that your password matches your confirmed password")-->
+<!--                document.getElementById("pass").focus;    -->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                alert("Welcome " + Uname + " thanks for joining us")-->
+<!--            }-->
+<!--            break;   -->
+<!--        }-->
+<!--    }-->
+<!--}-->
+<!--</script>-->
 </body>
 </html>

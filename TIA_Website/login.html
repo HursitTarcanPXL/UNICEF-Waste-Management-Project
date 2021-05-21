@@ -5,6 +5,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a3c3439572.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <section class="menu">
@@ -34,22 +35,22 @@
             </div>
             
             <!--Button-->
-            <button type="submit" onclick="SignIn" class="loginButton"><i class="fas fa-sign-in-alt"></i></button>
+            <button type="submit" onclick="registerFormCheckInputFilled()" class="loginButton"><i class="fas fa-sign-in-alt"></i></button>
         </form>
         <p id="noAccount">No account? Sign up <a id="signUpHere" href="signup.html">here.</a></p>
     </div>
 </section>
 
-<script>
-    function SignIn()
-    {
-        let username = document.getElementById("userName").value;
-        let pass = document.getElementById("passWord").value;
-        console.log(username + " " + pass);
+<!--<script>-->
+<!--    function SignIn()-->
+<!--    {-->
+<!--        let username = document.getElementById("userName").value;-->
+<!--        let pass = document.getElementById("passWord").value;-->
+<!--        console.log(username + " " + pass);-->
 
-        document.getElementById("userName").value = '';
-        document.getElementById("passWord").value = '';
-    }
-</script>
+<!--        document.getElementById("userName").value = '';-->
+<!--        document.getElementById("passWord").value = '';-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
