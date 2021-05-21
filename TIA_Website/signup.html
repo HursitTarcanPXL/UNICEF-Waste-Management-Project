@@ -21,7 +21,7 @@
     <div class="mainCenter">
     <!--Sign Up -->
         <h1 id="title">SIGN UP.</h1>
-        <form style="max-width:500px; margin:auto">
+        <form style="max-width:500px; margin:auto" id="form">
         
         <!--Input fields-->
         
@@ -63,15 +63,55 @@
 <!--                <i class="fas fa-key icon"></i>-->
 <!--                <input class="inputField" type="text" id="confpass" placeholder="Confirm Password">-->
 <!--            </div>-->
-            
+
+            <input type="submit" value="add">
             <!--Sign Up button-->
-            <button type="submit" class="loginButton" onclick="addNewUser()"><i class="fas fa-sign-in-alt"></i></button>
+            <!--<button type="submit" class="loginButton" onclick="addNewUser()"><i class="fas fa-sign-in-alt"></i></button>-->
         </form>
         
         <!--Link to sign in-->
         <p id="noAccount">Already have an account? Sign in <a id="signUpHere" href="login.html">here.</a></p>
     </div>
 </section>
+<script>
+    function registerFormCheckInputFilled() {
+        if ((document.getElementById('E-address').value.length > 0) && (document.getElementById('Fname').value.length > 0)
+            && (document.getElementById('Lname').value.length > 0) && (document.getElementById('pass').value.length > 0)) {
+            return true;
+        }
+    }
+
+    var form = document.getElementById('form');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var firstname = document.getElementById('Fname').value;
+        var lastname = document.getElementById('Lname').value;
+        var username = document.getElementById('E-address').value;
+        var password = document.getElementById('pass').value;
+
+        fetch("http://localhost:4000/users/register", {
+            method: 'POST',
+            body: JSON.stringify({
+                firstname: firstname,
+                lastname: lastname,
+                username: username,
+                password: password
+            }),
+            headers: {
+                "Content-Type":"application/json; Charset=UTF-8"
+            }
+        })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (date) {
+                console.log(date);
+            })
+
+    });
+</script>
 <!--<script>-->
 <!--function btnSignUpclick()-->
 <!--{-->
