@@ -1,1 +1,0 @@
-# DataBase_TIA_Waste_Management
