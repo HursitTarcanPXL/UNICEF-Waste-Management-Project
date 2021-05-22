@@ -21,7 +21,7 @@
     <!--Sign Up -->
         <h1 id="title">SIGN UP.</h1>
 
-        <p id="userAlreadyExists">Username Already Exist, Please Take A New Username.</p>
+        <p id="userAlreadyExists">Username Already Exist, Please Take A Different Username Please.</p>
 
         <form style="max-width:500px; margin:auto" id="form">
 
@@ -76,7 +76,6 @@
         })
             .then(function (response) {
                 if (response.status == 200) {
-                    //alert("Login Succes!");
                     window.location.href = "./login.html";
                     document.getElementById('userAlreadyExists').style.visibility = 'collapsed';
                     return response.json();

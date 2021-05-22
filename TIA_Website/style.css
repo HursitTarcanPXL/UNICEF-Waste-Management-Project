@@ -391,3 +391,14 @@ footer {
     color: red;
     outline: black 3px;
 }
+
+#loginWrongCredentials {
+    margin-top: -50px;
+    visibility: collapse;
+    color: red;
+    outline: black 3px;
+}
+
+#space {
+    margin-bottom: 400px;
+}
