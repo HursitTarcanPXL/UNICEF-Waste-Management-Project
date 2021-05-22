@@ -66,6 +66,24 @@ html {
     background-size: cover;
 }
 
+#SpendImage {
+    margin: 0;
+    background-image: url(assets/Best-Golf-Courses-In-South_Africa-Outeniqua.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profileImage {
+    margin: 0;
+    background-image: url(assets/wp1843003.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mainCenter {
     position: absolute;
     left: 0;
