@@ -384,3 +384,10 @@ footer {
 /*Login CSS End*/
 
 /*CONTACT*/
+
+#userAlreadyExists {
+    margin-top: -50px;
+    visibility: collapse;
+    color: red;
+    outline: black 3px;
+}
